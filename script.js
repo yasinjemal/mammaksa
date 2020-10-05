@@ -13,3 +13,7 @@ async function getQuote(){
 }
 // on load
 getQuote();
+const tl = gsap.timeline({defaults: {duration: 3, ease: "none"}, repeat: -1, repeatDelay: 1})
+.to(".scrollbar", {yPercent: 384})
+.to(".content", {y: -200}, 0)
+.to(".focus", {y: -400}, 0)
